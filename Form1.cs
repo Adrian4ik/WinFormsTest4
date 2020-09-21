@@ -21,7 +21,7 @@ namespace WinFormsTest4
 
         int cl_num = 3;
 
-        string[] client = { "93.123.150.67", "77.88.21.11", "8.8.8.8" }; // "10.52.179.240"; // "176.59.33.29"; // "93.123.150.67";
+        string[] client = { "10.52.179.240", "77.88.21.11", "8.8.8.8" }; // "10.52.179.240"; // "176.59.33.29"; // "93.123.150.67";
 
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
 
@@ -49,12 +49,11 @@ namespace WinFormsTest4
             for (int i = 0; i < cl_num; i++)
             {
                 text[i] = new Label();
-                text[i].AutoSize = true;
                 text[i].Font = new Font("Harlow Solid Italic", 14.25F, FontStyle.Italic);
                 text[i].ForeColor = Color.FromArgb(255, 255, 255);
                 text[i].Location = new Point(5, 5 + i * 32);
                 text[i].Name = "text" + i;
-                text[i].Size = new Size(0, 27);
+                text[i].Size = new Size(240, 27);
                 text[i].TabIndex = i * 2;
                 text[i].UseCompatibleTextRendering = true;
                 Controls.Add(text[i]);
