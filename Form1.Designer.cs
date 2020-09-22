@@ -39,7 +39,7 @@
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(1600, 900);
+            this.Location = new System.Drawing.Point(1500, 300);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

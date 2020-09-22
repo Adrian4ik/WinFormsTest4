@@ -95,7 +95,7 @@ namespace WinFormsTest4
 
             if (status == IPStatus.Success)
             {
-                text[cl].ForeColor = Color.FromArgb(0, 192, 0);
+                text[cl].ForeColor = (time < 100) ? Color.FromArgb(0, 192, 0) : (time < 1000) ? Color.FromArgb(192, 192, 0) : Color.FromArgb(192, 0, 0);
                 text[cl].Text += time + " ms";
             }
             else
